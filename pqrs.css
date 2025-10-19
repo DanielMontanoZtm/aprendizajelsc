@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'DMSans Semibold';
+    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.pqrs-container {
+    padding-top: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pqrs-title {
+    font-family: 'DMSans Semibold', sans-serif;
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+
+.pqrs-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background:  #87408B;
+}
+
+.faq-box {
+    font-family: 'DMSans Regular', 'Arial', sans-serif;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.faq-item {
+    background-color: #f2f2f2;
+    border: 1px solid #a0a0a0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5c5c5c;
+}
+
+.faq-question:hover {
+    background-color: #e6e6e6;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    border-top: 1px solid #ccc;
+    font-size: 15px;
+    color: #444;
+    background-color: #fff;
+}
+
+.toggle-icon {
+    width: 30px;
+    height: px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.open .faq-answer {
+    display: block;
+}
+
+.faq-item.open .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; 
+    margin: 40px auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.image-gallery img {
+    width: auto;
+    height: 180px; 
+    object-fit: contain;
+    display: block; 
+}
+
+.contact-button-container {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.contact-button {
+    background: linear-gradient(to right, #87408B, #87408B);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'DMSans Semibold', sans-serif;
+    display: inline-block;
+    text-decoration: none; 
+    text-align: center;
+}
+
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    background: linear-gradient(to right, #5c2c5f, #87408B);
+}
+
+.contact-button:active {
+    transform: translateY(1px);
+}
+
+.contact-button strong {
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-wrap: wrap; 
+    }
+    .image-gallery img {
+        height: 150px;
+        margin: 5px 0;
+    }
+}

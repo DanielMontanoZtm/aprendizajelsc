@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'DMSans Semibold';
+    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-color: #87408B;
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    overflow: visible;
+    
+}
+
+ /* Botón Logo */
+
+.logo-box {
+    width: 17%;
+    height: 100%; 
+    background-color: white;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box;
+    flex-shrink: 0;
+    padding: 15px; 
+    overflow: hidden; 
+}
+
+.logo-box img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block; 
+}
+
+ /* Casillas Pestañas */
+
+ .menu-container {
+    display: flex;
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    height: 100%;
+    gap: 40px;
+    padding: 0 20px;
+    text-decoration: none;
+    
+}
+
+.menu-item {
+    width: 110px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.menu-item.active {
+    position: relative; 
+    background-color: transparent !important; 
+    z-index: 1; 
+}
+
+.menu-item.active::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 70%; 
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    z-index: -1; 
+}
+
+
+.menu-item.active::before {
+    height: 80%; 
+    bottom: 0px; 
+}
+
+.menu-item.active span {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+.menu-item:hover span {
+    color: #f1f1f1;
+    transition: color 0.3s;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.menu-item span {
+    color: white;
+    font-family: 'DrukWideBold', Arial, sans-serif; 
+    font-size: 10px;
+    text-align: center;
+
+}
+
+ /* Botón Usuario */
+
+
+.menu-toggle {
+    display: none;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin-left: auto;
+    padding: 0 60px;
+}
+
+.user-box {
+    width: 80px; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.user-box img {
+    width: 80px; 
+    height: 80px;
+    object-fit: contain;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 80%;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+
+.dropdown-menu li a {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'DrukWideBold', Arial, sans-serif;
+    color: rgb(67, 67, 67);
+    font-size: 13px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.logout-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+    vertical-align: middle; 
+    margin-bottom: 3px; 
+    padding-left: 3px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #eaeaea;
+}
+
+
+.menu-toggle:checked ~ .dropdown-menu {
+    display: block;
+}
+
+
+@keyframes gentleBounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+.user-box:hover img {
+    animation: gentleBounce 0.5s;
+}
+
+@keyframes fadeInDropdown {
+    0% { opacity: 0; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.menu-toggle:checked ~ .dropdown-menu {
+    display: block;
+    animation: fadeInDropdown 0.3s ease-out forwards;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección Abedecario</title>
+<link rel="icon" href="Imagenes/header/logo.png" type="image/png">
+<link rel="stylesheet" href="leccion-abecedario.css"> 
+
+</head>
+<body>
+<div class="container">
+<button class="close-btn">×</button>
+
+<div class="progress-container">
+<div class="progress-bar" id="progressBar"></div>
+</div>
+
+<!-- Nivel 1 - Explicación -->
+<div class="level active" data-level="1">
+<div class="explanation-title">¡Aprendamos el Abecedario juntos!</div>
+<div class="explanation-container">
+<div class="media-container">
+<video controls>
+<source src="Imagenes/lecciones/videos_abecedario_completo.mp4" type="video/mp4">
+Tu navegador no soporta el elemento de video.
+</video>
+</div>
+<div class="media-container">
+<img src="Imagenes/lecciones/ficha_abecedario.png" alt="Imagen explicativa">
+</div>
+</div>
+<div class="controls explanation-controls">
+<button class="btn check-btn">Revisar</button>
+</div>
+</div>
+
+<!-- Nivel 2 - Seleccione el significado de la seña -->
+<div class="level" data-level="2">
+  <div class="content-wrapper">
+    <div class="left-panel">
+      <div class="sign-video">
+        <img src="Imagenes/lecciones/abecedario_sinnombres/n.png" alt="Seña del abecedario">
+      </div>
+      <div class="question">¿Qué significa esta seña?</div>
+      <div class="options">
+        <div class="option" data-correct="false">Ww</div>
+        <div class="option" data-correct="true">Nn</div>
+        <div class="option" data-correct="false">Ññ</div>
+        <div class="option" data-correct="false">Qq</div>
+      </div>
+    </div>
+  
+    <div class="webcam-panel">
+      <video id="webcam-2" autoplay muted></video> <!-- Nivel 2 -->
+    </div>
+    
+  </div>
+  
+    <div class="controls">
+        <button class="btn skip-btn">Saltar</button>
+        <button class="btn check-btn">Revisar</button>
+    </div>
+</div>
+
+<!-- Nivel 3 -->
+<div class="level" data-level="3">
+  <div class="content-wrapper">
+    <div class="left-panel">
+      <div class="question">¿Cuál de estas señas es "B"?</div>
+      <div class="options image-options">
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/x.png" alt="Seña x">
+        </div>
+        <div class="option" data-correct="true">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/b.png" alt="Seña B">
+        </div>
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/d.png" alt="Seña D">
+        </div>
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/p.png" alt="Seña P">
+        </div>
+      </div>
+    </div>
+    
+    <div class="webcam-panel">
+      <video id="webcam-3" autoplay muted></video> <!-- Nivel 3 -->
+    </div>
+
+  </div>
+  
+  <div class="controls">
+    <button class="btn skip-btn">Saltar</button>
+    <button class="btn check-btn">Revisar</button>
+  </div>
+</div>
+
+<!-- Nivel 4 - Seleccione el significado de la seña -->
+<div class="level" data-level="4">
+  <div class="content-wrapper">
+    <div class="left-panel">
+      <div class="sign-video">
+        <img src="Imagenes/lecciones/abecedario_sinnombres/k.png" alt="Seña del abecedario F">
+      </div>
+      <div class="question">¿Qué significa esta seña?</div>
+      <div class="options">
+        <div class="option" data-correct="false">Hh</div>
+        <div class="option" data-correct="false">Ll</div>
+        <div class="option" data-correct="false">Qq</div>
+        <div class="option" data-correct="true">Kk</div>
+      </div>
+    </div>
+    
+    <div class="webcam-panel">
+      <video id="webcam-4" autoplay muted></video> <!-- Nivel 4 -->
+    </div>
+
+  </div>
+  
+  <div class="controls">
+    <button class="btn skip-btn">Saltar</button>
+    <button class="btn check-btn">Revisar</button>
+  </div>
+</div>
+
+<!-- Nivel 5 - Ordena las letras en seña para formar la palabra "SOL" -->
+<div class="level" data-level="5">
+  <div class="content-wrapper">
+    <div class="left-panel">
+      <div class="question">Ordena estas señas para deletrear la palabra "SOL" <br> Haz clic en las imágenes en el orden correcto</div>
+      <div class="options image-options reorder-options">
+        <div class="option" data-letter="S">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/s.png" alt="Letra S">
+        </div>
+        <div class="option" data-letter="L">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/l.png" alt="Letra L">
+        </div>
+        <div class="option" data-letter="O">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/o.png" alt="Letra O">
+        </div>
+      </div>
+    </div>
+    
+    <div class="webcam-panel">
+      <video id="webcam-5" autoplay muted></video> <!-- Nivel 5 -->
+    </div>
+
+  </div>
+  
+  <div class="controls">
+    <button class="btn skip-btn">Saltar</button>
+    <button class="btn check-btn">Revisar</button>
+  </div>
+</div>
+
+<!-- Nivel 6 - Seleccione la seña correcta -->
+<div class="level" data-level="6">
+  <div class="content-wrapper">
+    <div class="left-panel">
+      <div class="question">¿Cuál de estas señas es "Q"?</div>
+      <div class="options image-options">
+        <div class="option" data-correct="true">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/q.png" alt="Seña Q">
+        </div>
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/t.png" alt="Seña T">
+        </div>
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/nie.png" alt="Seña NIE">
+        </div>
+        <div class="option" data-correct="false">
+          <img src="Imagenes/lecciones/abecedario_sinnombres/g.png" alt="Seña Z">
+        </div>
+      </div>
+    </div>
+    
+    <div class="webcam-panel">
+      <video id="webcam-6" autoplay muted></video> <!-- Nivel 6 -->
+    </div>
+
+  </div>
+  
+  <div class="controls">
+    <button class="btn skip-btn">Saltar</button>
+    <button class="btn check-btn">Revisar</button>
+  </div>
+</div>
+
+<!-- Modal de confirmación -->
+<div class="modal" id="confirmExitModal">
+    <div class="modal-content">
+      <div class="modal-title">¿Salir de la lección?</div>
+      <p>¿Estás seguro de que quieres salir de la lección? Tu progreso no se guardará.</p>
+      <div class="modal-button-group">
+        <button class="modal-btn" id="cancelExitBtn">Cancelar</button>
+        <button class="modal-btn danger" id="confirmExitBtn">Salir</button>
+      </div>
+      
+      
+    </div>
+  </div>
+
+<!-- Modal de resultado -->
+<div class="modal" id="resultModal">
+<div class="modal-content">
+<div class="modal-title" id="modalTitle">Correcto</div>
+<p id="modalMessage">¡Buen trabajo! Avanzando al siguiente nivel.</p>
+<button class="modal-btn" id="modalBtn">Continuar</button>
+</div>
+</div>
+
+<div id="warningModal" class="modal">
+  <div class="modal-content">
+    <h2 class="modal-title"><strong>Atención</strong></h2>
+    <p>Por favor selecciona una opción antes de revisar.</p>
+    <div class="modal-button-group">
+      <button class="modal-btn" onclick="closeWarningModal()">Aceptar</button>
+    </div>
+  </div>
+</div>
+
+<div id="tsparticles"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script src="logica_lecciones.js" defer></script> 
+
+</body>
+</html>

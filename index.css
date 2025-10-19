@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'DMSans Semibold';
+    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    display: flex; 
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    overflow: visible;
+    margin-bottom: 1px;
+}
+
+.logo-box {
+    width: 17%;
+    height: 100%; 
+    background-color: white;
+    border-bottom-right-radius: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box;
+    flex-shrink: 0;
+    padding: 15px; 
+    overflow: hidden; 
+}
+
+.logo-box img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+    display: block; 
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8%;
+    margin-top: 20px;
+    
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.login-title {
+    font-family: 'DrukWideBold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.login-subtext {
+    font-family: 'DMSans Regular', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-subtext a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+label {
+    font-family: 'DMSans Regular', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffeaea;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-button {
+    margin-top: 30px;
+    background-color: #ff4e5a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    border-radius: 13px;
+    cursor: pointer;
+    width: 60%;
+    align-self: center;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.login-right {
+    flex: 1;
+    text-align: center;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.login-img {
+    max-width: 70%;
+    height: auto;
+}
+
+.login-img img{
+    width: 80px;
+    height: auto;
+}
+
+.login-right-text {
+    font-family: 'DrukWideBold', sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.highlight {
+    color: #ff4e5a;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    font-family: 'DMSans Regular', sans-serif;
+    width: 80%;
+    height: 28px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffeaea; 
+}
+
+.login-container h1 {
+    font-family: 'DrukWideBold';
+    font-size: 34px;
+    margin-top: 2px;  
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-family: 'DMSans Semibold';
+}
+
+.login-container input {
+    margin-bottom: 20px; 
+}
+
+.ilustracion {
+    width: 330px;
+    height: auto;
+    margin-top: 1px;
+}
+
+.estrella{
+    width: 30px;
+    height: auto;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #555; 
+padding-right: 48px;
+padding-bottom: 15px;
+    margin: 0;
+}
+
+.toggle-password:hover {
+    color: #000; 
+}
+

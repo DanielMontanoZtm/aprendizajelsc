@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio General</title>
+    <link rel="icon" href="Imagenes/header/logo.png" type="image/png">
+    <link rel="stylesheet" href="iniciogeneral.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="Imagenes/header/logo.png" alt="Logo" class="logo">
+    </div>
+
+
+    <div class="columnas">
+        <!-- Columna 1 - Lecciones -->
+        <a href="Lecciones.html" class="columna">
+            <img src="Imagenes/iniciogeneral/per_lecciones.png" alt="Lecciones" class="img-lecciones">
+            <div class="letrero">Lecciones</div>
+        </a>
+    
+        <!-- Columna 2 - Glosario -->
+        <a href="Glosario.html" class="columna">
+            <img src="Imagenes/iniciogeneral/per_glosario.png" alt="Glosario">
+            <div class="letrero">Glosario</div>
+        </a>
+    
+        <!-- Columna 3 - Logros -->
+        <a href="Logros.html" class="columna">
+            <img src="Imagenes/iniciogeneral/per_logros.png" alt="Logros">
+            <div class="letrero">Logros</div>
+        </a>
+    
+        <!-- Columna 4 - PQRS -->
+        <a href="Pqrs.html" class="columna">
+            <img src="Imagenes/iniciogeneral/per_login.png" alt="Preguntas" class="img-preguntas">
+            <div class="letrero">Preguntas</div>
+        </a>
+    </div>
+
+    <div class="bubble-transition">
+        <div class="bubble"></div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a.columna').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        
+        // Obtiene posición de la columna clickeada
+        const rect = this.getBoundingClientRect();
+        const x = rect.left + rect.width/2;
+        const y = rect.top + rect.height/2;
+        
+        // Crea y posiciona la burbuja
+        const bubble = document.querySelector('.bubble');
+        bubble.style.left = `${x}px`;
+        bubble.style.top = `${y}px`;
+        bubble.style.width = `${Math.max(rect.width, rect.height)}px`;
+        bubble.style.height = bubble.style.width;
+        
+        // Activa animación
+        bubble.style.animation = 'bubble-pop 0.7s forwards';
+        
+        // Redirige después de la animación
+        setTimeout(() => {
+            window.location.href = href;
+        }, 700);
+    });
+});
+
+
+    </script>
+</body>
+</html>

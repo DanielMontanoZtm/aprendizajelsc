@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'DMSans Semibold';
+    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Estructura principal */
+.main-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.achievements-grid {
+    display: flex;
+    justify-content: space-around; 
+    gap: 120px; 
+    padding: 115px 5% 40px; 
+    position: relative;
+    z-index: 1;
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+.achievement-column {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    min-width: 150px; 
+}
+
+
+.achievement-item {
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.achievement-item img {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.center-image {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.center-image img {
+    max-width: 150px; 
+    width: 30%; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden; 
+}
+
+
+.achievement-item {
+    position: relative; 
+    cursor: pointer; 
+}
+.tooltip {
+    font-family: 'DMSans Regular', sans-serif;
+    position: absolute;
+    top: -40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -6px; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 6px 6px; 
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.8);
+}
+
+.achievement-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -50px; 
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 10px;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+  

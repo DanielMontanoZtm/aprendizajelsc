@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecciones</title>
+    <link rel="icon" href="Imagenes/header/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="lecciones.css"> 
+</head>
+<body>
+    <header>
+        <a href="Lecciones.html" class="logo-box">
+            <img src="imagenes/header/logo.png" alt="Logo"> 
+        </a>
+    
+        <div class="menu-container">
+            <a href="Lecciones.html" class="menu-item">
+                <img src="Imagenes/header/lecciones_blanco.png" alt="Lecciones">
+                <span>Lecciones</span>
+            </a>
+            <a href="Glosario.html" class="menu-item">
+                <img src="Imagenes/header/glosario_blanco.png" alt="Glosario">
+                <span>Glosario</span>
+            </a>
+            <a href="Logros.html" class="menu-item">
+                <img src="Imagenes/header/logros_blanco.png" alt="Logros">
+                <span>Logros</span>
+            </a>
+            <a href="Pqrs.html" class="menu-item">
+                <img src="Imagenes/header/pqrs_blanco.png" alt="PQRS">
+                <span>Pqrs</span>
+            </a>
+        </div>
+    
+        <nav class="user-menu">
+            <input type="checkbox" id="user-menu-toggle" class="menu-toggle">
+            <label for="user-menu-toggle" class="user-box">
+                <img src="imagenes/header/usuario.png" alt="Usuario">
+            </label>
+            
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="Index.html">
+                        <span>Salir </span>
+                        <img src="Imagenes/header/logout.png" alt="Logout" class="logout-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="welcome-banner">
+        <h1>Bienvenido, Daniel</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="personaje-container">
+            <img src="Imagenes/inicio/per_lecciones.png" alt="Personaje lecciones" class="personaje-img">
+        </div>
+        
+        <div class="tablero-container">
+            <div style="position: relative;">
+                <img src="Imagenes/inicio/tablero.png" alt="Tablero de lecciones" class="tablero-img">
+                <div class="lecciones-grid">
+                    <!-- Fila 1 -->
+                    <div class="leccion-item">
+                        <a href="Leccion-abecedario.html">
+                            <img src="Imagenes/inicio/1abecedario.png" alt="Abecedario">
+                        </a>
+                    </div>                    
+                    <div class="leccion-item">
+                        <a href="Leccion-saludos.html">
+                            <img src="Imagenes/inicio/2saludos-despedidas.png" alt="Saludos y despedidas">
+                        </a>
+                    </div>
+                    <div class="leccion-item">
+                        <a href="Leccion-numeros.html">
+                            <img src="Imagenes/inicio/3numeros.png" alt="Números">
+                        </a>
+                    </div>
+                    
+                    <!-- Fila 2 -->
+                    <div class="leccion-item">
+                        <a href="#leccion4"><img src="Imagenes/inicio/4colores.png" alt="Lección 4"></a>
+                    </div>
+                    <div class="leccion-item">
+                        <a href="#leccion5"><img src="Imagenes/inicio/5calendario.png" alt="Lección 5"></a>
+                    </div>
+                    <div class="leccion-item">
+                        <a href="#leccion6"><img src="Imagenes/inicio/6comida.png" alt="Lección 6"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="javascript.js" defer></script> 
+</body>
+</html>

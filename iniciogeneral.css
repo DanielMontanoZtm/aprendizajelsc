@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'DrukWideBold';
+    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; 
+}
+
+@font-face {
+    font-family: 'DMSans Semibold';
+    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    background: url('Imagenes/iniciogeneral/fondo_inicio_general.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header {
+    margin: 20px 0 45px 0; 
+}
+
+.logo {
+    width: 230px;
+    height: auto;
+}
+
+
+.columnas {
+    display: flex;
+    justify-content: center; 
+    gap: 55px;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+
+.columna {
+    cursor: pointer;
+}
+
+.columna:hover {
+    transform: translateY(-5px); 
+}
+
+.columna img {
+    width: 240px;
+    height: auto;
+    object-fit: contain; 
+    margin-bottom: 15px;
+}
+
+
+.letrero {
+    font-family: 'DrukWideBold', sans-serif;
+    background: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+    padding: 8px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-lecciones {
+    width: 302px !important; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.img-preguntas {
+    width: 250px !important; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.columna:hover img {
+    filter: 
+        drop-shadow(0 0 10px rgba(255, 255, 255, 0.7))
+        drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
+}
+
+a.columna, 
+a.columna:hover, 
+a.columna:focus, 
+a.columna .letrero {
+    text-decoration: none !important;
+    color: inherit !important;
+    outline: none !important;
+}
+
+
+.bubble-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #c195bd, #84bce7);
+    border: solid 2px ;
+    transform: scale(0);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+@keyframes bubble-pop {
+    0% { transform: scale(0); opacity: 0.8; }
+    50% { opacity: 0.6; }
+    100% { transform: scale(20); opacity: 0; }
+}
