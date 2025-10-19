@@ -154,6 +154,37 @@ input[type="password"] {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
+.login-button:hover {
+    background-color: #c23c45;
+    color: white;
+    border: white;
+    transition: background-color 0.3s ease;
+}
+
+.guest-button {
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: black;
+    border-style: solid;
+    padding: 15px;
+    border-radius: 13px;
+    cursor: pointer;
+    width: 60%;
+    align-self: center;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-family: 'DMSans Semibold', sans-serif;
+    font-size: 14px;
+}
+
+.guest-button:hover {
+    background-color: black;
+    color: white;
+    border: white;
+    transition: background-color 0.3s ease;
+}
+
 .login-right {
     flex: 1;
     text-align: center;
