@@ -52,8 +52,8 @@ header {
 }
 
 .logo-box img {
-    max-width: 100%; 
-    max-height: 100%; 
+    max-width: 80%; 
+    max-height: 80%; 
     object-fit: contain; 
     display: block; 
 }
@@ -144,7 +144,7 @@ input[type="password"] {
 
 .login-button {
     margin-top: 15px;
-    background-color: #ff4e5a;
+    background-color: #e92c6eff;
     color: white;
     font-weight: bold;
     border: none;
@@ -156,7 +156,7 @@ input[type="password"] {
 }
 
 .login-button:hover {
-    background-color: #c23c45;
+    background-color: rgb(192, 35, 90);
     color: white;
     border: white;
     transition: background-color 0.3s ease;
@@ -214,7 +214,7 @@ input[type="password"] {
 }
 
 .highlight {
-    color: #ff4e5a;
+    color: #e92c6eff;
 }
 
 .login-container input[type="text"],
@@ -275,4 +275,3 @@ padding-bottom: 15px;
 .toggle-password:hover {
     color: #000; 
 }
-

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargando...</title>
+  <link rel="icon" href="Imagenes/header/favicon.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: white;
+      overflow: hidden;
+    }
+    
+    .logo-animado {
+      width: 180px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      transform: translateY(-41px);
+      animation: fade-out 1s ease-in-out 2.9s forwards;
+    }
+    
+    .heart-container {
+      position: absolute;
+      z-index: 2;
+      animation: expand 2s ease-in-out 3s forwards;
+    }
+    
+    svg {
+      width: 60px;
+      height: 60px;
+      fill: #316cba;
+      animation: beat 1s ease-in-out 3;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.2); }
+    }
+
+    @keyframes expand {
+      to {
+        transform: scale(30);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fade-out {
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="Imagenes/header/logoanimado.png" alt="Logo-animado" class="logo-animado">
+  
+  <div class="heart-container">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+               2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09
+               C13.09 3.81 14.76 3 16.5 3
+               19.58 3 22 5.42 22 8.5
+               c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    </svg>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = 'Iniciogeneral.html';
+    }, 5000); 
+  </script>
+</body>
+</html>
