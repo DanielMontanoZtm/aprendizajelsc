@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="icon" href="Imagenes/header/logo.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f8a28715e0.js" crossorigin="anonymous"></script> 
+<body>
+    <header>
+        <a href="Index.html" class="logo-box">
+            <img src="imagenes/header/logo.png" alt="Logo"> 
+        </a>
+    </header>
+
+        <main class="login-container">
+            <section class="login-left">
+                <h1 class="login-title">INICIO DE SESIÓN</h1>
+                <p class="login-subtext">¿No tienes una cuenta? <u>Regístrate aquí</u></p>
+                
+                <label for="email">EMAIL O NOMBRE DE USUARIO</label>
+                <input type="text" id="email" name="email">
+        
+                <label for="password">CONTRASEÑA</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password">
+                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                        <i id="eye-icon" class="fa-solid fa-eye"></i>
+                    </button>
+                </div>
+                
+        
+                <button class="login-button" id="login-button">INGRESAR</button>
+
+            </section>
+        
+            <section class="login-right">
+                <img src="Imagenes/iniciosesion/per_login.png" alt="Ilustración" class="ilustracion">
+                <p class="login-right-text">
+                    <strong>APRENDE LENGUAJE DE SEÑAS<br>COLOMBIANO FÁCILMENTE,</strong><br>
+                    <span class="highlight">¡CON NOSOTROS!</span> 
+                    <img src="Imagenes/iniciosesion/estrella.png" alt="estrella" class="estrella">
+                </p>
+            </section>
+        </main>
+        
+        <script src="index.js" defer></script> 
+</body>
+</html>
