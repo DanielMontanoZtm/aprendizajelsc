@@ -1,0 +1,123 @@
+/* Estilos adaptivos solo para móviles */
+@media (max-width: 780px) {
+
+
+    /* Contenedor principal */
+    main {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    /* ==== Flipbook centrado y escalado ==== */
+    .flipbook-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.6);
+        transform-origin: top center;
+        transition: transform 0.3s ease;
+    }
+
+    /* Ajuste de escala según resolución */
+    @media (max-width: 670px) {
+        .flipbook-wrapper {
+            transform: scale(0.5);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .flipbook-wrapper {
+            transform: scale(0.45);
+        }
+    }
+
+    @media (max-width: 420px) {
+        .flipbook-wrapper {
+            transform: scale(0.4);
+        }
+    }
+
+    @media (max-width: 375px) {
+        .flipbook-wrapper {
+            transform: scale(0.35);
+        }
+    }
+
+    /* Flipbook */
+    #flipbook {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+        transform-origin: center center;
+    }
+
+    /* Páginas del flipbook */
+    #flipbook .page {
+        width: 100% !important;
+        height: auto !important;
+        box-shadow: none !important;
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Texto dentro de las páginas */
+    .page-content {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        padding: 8px;
+        text-align: justify;
+    }
+
+    /* ==== Botones del flipbook ==== */
+    .flipbook-controls {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin: 10px 0;
+    }
+
+    .flipbook-controls button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    /* ==== Imagen debajo del flipbook ==== */
+    .glossary-floating-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .glossary-floating-image img {
+        width: 200px;
+        height: auto;
+        display: block;
+    }
+
+    /* ==== Videos y contenido interno ==== */
+    .glossary-section h2,
+    .glossary-section h3 {
+        font-size: 1rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .glossary-video video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
