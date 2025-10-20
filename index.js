@@ -20,7 +20,7 @@
         const password = document.getElementById("password").value.trim();
 
         if (email === "est.danielf.lopez@unimilitar.edu.co" && password === "12345678") {
-            window.location.href = "Iniciogeneral.html";
+            window.location.href = "Cargando.html";
         } else {
             alert("Correo o contraseña incorrectos.");
         }

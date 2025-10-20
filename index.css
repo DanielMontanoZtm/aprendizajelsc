@@ -126,7 +126,7 @@ input[type="password"] {
     font-size: 16px;
 }
 
-.password-container {
+.password-container, .email-container {
     position: relative;
     width: 100%;
 }
@@ -240,8 +240,10 @@ input[type="password"] {
     display: block;
     margin-top: 20px;
     margin-bottom: 8px;
-    font-family: 'DMSans Semibold';
+    font-family: 'DMSans Semibold', sans-serif; /* Cambia aquí */
+    font-weight: normal; /* Asegura que no sea bold */
 }
+
 
 .login-container input {
     margin-bottom: 20px; 
