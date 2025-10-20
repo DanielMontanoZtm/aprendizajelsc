@@ -7,9 +7,15 @@
     <link rel="icon" href="Imagenes/header/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="logros.css">
+    <link rel="stylesheet" href="stylemovil.css"> 
+    <script src="https://kit.fontawesome.com/f8a28715e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
         <a href="Lecciones.html" class="logo-box">
             <img src="Imagenes/header/logo.png" alt="Logo"> 
         </a>
@@ -49,6 +55,62 @@
             </ul>
         </nav>
     </header>
+<!-- Menú móvil lateral -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <h2 class="mobile-menu-title">Categorías</h2>
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="mobile-menu-items">
+        <a href="Lecciones.html" class="mobile-menu-item">
+            <img src="Imagenes/header/lecciones_blanco.png" alt="Lecciones">
+            <span>Lecciones</span>
+        </a>
+        <a href="Glosario.html" class="mobile-menu-item">
+            <img src="Imagenes/header/glosario_blanco.png" alt="Glosario">
+            <span>Glosario</span>
+        </a>
+        <a href="Logros.html" class="mobile-menu-item">
+            <img src="Imagenes/header/logros_blanco.png" alt="Logros">
+            <span>Logros</span>
+        </a>
+        <a href="Pqrs.html" class="mobile-menu-item">
+            <img src="Imagenes/header/pqrs_blanco.png" alt="PQRS">
+            <span>Pqrs</span>
+        </a>
+    </div>
+</nav>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuClose = document.querySelector('.mobile-menu-close');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.add('active');
+        mobileMenuOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Evitar scroll
+    });
+    
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('active');
+        mobileMenuOverlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restaurar scroll
+    }
+    
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    
+    document.querySelectorAll('.mobile-menu-item').forEach(item => {
+        item.addEventListener('click', closeMobileMenu);
+    });
+});
+</script>
 
     <main class="main-content">
         <div class="achievements-grid">

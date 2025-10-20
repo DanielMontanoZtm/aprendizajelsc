@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // ===== BLOQUE 1: Lógica del menú activo =====
     (function initMenu() {
