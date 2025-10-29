@@ -75,6 +75,11 @@ header {
     margin-right: 22px;
 }
 
+.logo-box img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+}
+
  /* Casillas Pestañas */
 
  .menu-container {
@@ -98,6 +103,11 @@ header {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s;
 }
 
 
@@ -144,10 +154,12 @@ header {
     margin-bottom: 8px;
 }
 
+
+
 .menu-item span {
     color: white;
     font-family: 'DrukWideBold', Arial, sans-serif; 
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
 
 }

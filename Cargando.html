@@ -23,7 +23,7 @@
       position: absolute;
       z-index: 1;
       transform: translateY(-41px);
-      animation: fade-out 1s ease-in-out 2.9s forwards;
+      animation: fade-out 1s ease-in-out 2.7s forwards;
     }
     
     .heart-container {
@@ -36,20 +36,38 @@
       width: 60px;
       height: 60px;
       fill: #316cba;
-      animation: beat 1s ease-in-out 3;
-      filter: drop-shadow(0 0 1px rgba(49, 108, 186, 0.3));
+      animation: beat 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-origin: center;
     }
 
     @keyframes beat {
-      0%, 100% { transform: scale(1); }
-      25% { transform: scale(1.2); }
-      50% { transform: scale(1); }
-      75% { transform: scale(1.2); }
+      0% {
+        transform: scale(1);
+      }
+      15% {
+        transform: scale(1.1);
+      }
+      30% {
+        transform: scale(1.05);
+      }
+      45% {
+        transform: scale(1.15);
+      }
+      60% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
     }
 
     @keyframes expand {
-      to {
-        transform: scale(30);
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(50);
         opacity: 0;
       }
     }

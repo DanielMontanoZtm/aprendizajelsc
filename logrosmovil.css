@@ -58,7 +58,7 @@
     }
     
     .full-width-image img {
-        transform: translateY(-50px); 
+        transform: translateY(-40px); 
         min-height: 100vh;
         object-fit: cover;
     }

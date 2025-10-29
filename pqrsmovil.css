@@ -66,4 +66,14 @@
     .contact-button:hover {
         transform: translateY(-2px);
     }
+
+    .letrero {
+        font-family: 'DrukWideBold', sans-serif;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+    }
+    
 }

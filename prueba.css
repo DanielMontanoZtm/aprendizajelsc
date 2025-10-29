@@ -1,6 +1,4 @@
-
-@media screen and (max-width: 780px) {
-  @font-face {
+@font-face {
     font-family: 'DrukWideBold';
     src: url('Fuentes/DrukWideBold.ttf') format('truetype');
     font-weight: bold;
@@ -190,10 +188,6 @@ i {
     color: #87408B;
     transition: transform 0.3s;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 #prev-btn:hover,
@@ -215,7 +209,7 @@ i {
 
 #prev-btn i,
 #next-btn i {
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .glossary-image img {
@@ -229,20 +223,19 @@ i {
     align-items: center;
     justify-content: center;
     gap: 0.8px;
-    width: 100%;
 }
 
 .glossary-floating-image {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 60%;  
-    z-index: 1; 
+    top: 75%;  
+    z-index: 1000;
     width: auto;
 }
 
 .glossary-floating-image img {
-    width: 110px;
+    width: 74px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -380,17 +373,4 @@ video[data-custom]::-webkit-media-controls {
     background: #632d66 !important;
     width: 10.5px !important;
     height: 10.5px !important;
-}
-
-
-.mobile-menu.active,
-.mobile-menu-overlay.active {
-    z-index: 1001;
-}
-
-.mobile-menu-close {
-  z-index: 1001
-}
-
-
 }
