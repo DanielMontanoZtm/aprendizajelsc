@@ -1,18 +1,3 @@
-@font-face {
-    font-family: 'DrukWideBold';
-    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; 
-}
-
-@font-face {
-    font-family: 'DMSans Semibold';
-    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
 .pqrs-container {
     padding-top: 30px; 
     max-width: 1200px;
@@ -21,9 +6,10 @@
 }
 
 .pqrs-title {
-    font-family: 'DMSans Semibold', sans-serif;
-    font-size: 35px;
-    color: #2c3e50;
+    font-family: "Baloo 2", sans-serif;
+font-weight: 700;
+    font-size: 40px;
+    color: #191e23;
     margin-bottom: 30px;
     position: relative;
     padding-bottom: 15px;
@@ -42,7 +28,8 @@
 }
 
 .faq-box {
-    font-family: 'DMSans Regular', 'Arial', sans-serif;
+    font-family: "DM Sans", sans-serif;
+font-weight: 400;
     text-align: left;
     max-width: 900px;
     margin: 0 auto;
@@ -158,14 +145,17 @@
 }
 
 .letrero {
-    font-family: 'DrukWideBold', sans-serif;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 13px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    box-shadow: none;
 }
 
 a {
+    font-family: "DM Sans", sans-serif;
+font-weight: 400;
     text-decoration: none;
 }
 

@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="leccionesmovil.css"> 
     <link rel="stylesheet" href="stylemovil.css"> 
     <script src="https://kit.fontawesome.com/f8a28715e0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+<!-- POPUP DE LECCIONES EN PROCESO -->
+<div id="popupProceso" class="popup-overlay">
+    <div class="popup-box">
+        <p class="popup-text">
+            Este nivel está en proceso de desarrollo.<br>
+            Muchas gracias por la paciencia.
+        </p>
+        <img src="Imagenes/iniciogeneral/per_pendiente.png" class="popup-img" alt="En proceso">
+        <button class="popup-close">Cerrar</button>
+    </div>
+</div>
+
+
 <body>
     <header>
         <button class="mobile-menu-btn">
@@ -160,5 +174,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     <script src="javascript.js" defer></script> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById("popupProceso");
+            const closeBtn = document.querySelector(".popup-close");
+        
+            // Íconos de las lecciones en proceso
+            const bloqueados = document.querySelectorAll(
+                'a[href="#leccion4"], a[href="#leccion5"], a[href="#leccion6"]'
+            );
+        
+            bloqueados.forEach(item => {
+                item.addEventListener("click", function(e) {
+                    e.preventDefault(); // Evita que salte a la sección inexistente
+                    popup.style.display = "flex"; // Muestra el popup
+                });
+            });
+        
+            closeBtn.addEventListener("click", function() {
+                popup.style.display = "none";
+            });
+        
+            // Cerrar al hacer clic fuera de la caja
+            popup.addEventListener("click", function(e) {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+        </script>
+        
 </body>
 </html>

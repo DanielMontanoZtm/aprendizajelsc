@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'DrukWideBold';
-    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; 
-}
-
-@font-face {
-    font-family: 'DMSans Semibold';
-    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
 
 /* Estructura principal */
 .main-content {
@@ -101,7 +87,8 @@
     cursor: pointer; 
 }
 .tooltip {
-    font-family: 'DMSans Regular', sans-serif;
+    font-family: "DM Sans", sans-serif;
+font-weight: 400;
     position: absolute;
     top: -40px; 
     left: 50%;

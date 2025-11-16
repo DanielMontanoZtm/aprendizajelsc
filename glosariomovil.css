@@ -1,19 +1,6 @@
 
 @media screen and (max-width: 780px) {
-  @font-face {
-    font-family: 'DrukWideBold';
-    src: url('Fuentes/DrukWideBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; 
-}
 
-@font-face {
-    font-family: 'DMSans Semibold';
-    src: url('Fuentes/DMSans_18pt-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
 
 body {
     margin: 0;
@@ -137,8 +124,7 @@ i {
 }
 
 .book-title {
-    font-family: 'DrukWideBold', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 25px;
     color: #632d66;
 }
 

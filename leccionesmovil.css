@@ -5,11 +5,11 @@
         margin-top: 15px;
         text-align: center;
         padding: 10px 5%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
     .welcome-banner h1 {
-        font-size: 14px;
+        font-size: 28px;
         margin: 15px 0;
         text-align: center;
     }
@@ -62,4 +62,38 @@
     .leccion-item:hover {
         transform: scale(1.02);
     }
+
+    /* Caja blanca */
+.popup-box {
+    width: 250px;
+    text-align: center;
+    align-items: center;
+}
+
+/* Texto */
+.popup-text {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Imagen */
+.popup-img {
+    width: 120px;
+
+}
+
+/* Botón cerrar */
+.popup-close {
+    margin: 0 auto;
+    display: block;
+    background: #e92c6e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+}
 }
